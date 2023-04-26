@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body { 
+    box-sizing: border-box;
+}
+/* HEADER SECTION */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s;
+}
+/* Rowone */
+header .rowone {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 15px 15px 40px;
+    width: 100%;
+    margin-bottom: 0;
+}
+header .rowone .colleft i {
+    margin-right: 15px;
+}
+header .rowone .asistenBar {
+    display: flex;
+    list-style: none;
+}
+header .rowone .asistenBar li {
+    margin-left: 30px;
+}
+header .rowone .asistenBar a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Rowtwo */
+header .rowtwo  {
+    background-color: #fff;
+    padding: 15px 15px 15px 40px;
+    width: 100%;
+    margin-top: 0;
+}
+header .rowtwo .container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+header .rowtwo .container .colleft {
+    display: flex;
+    align-items: center;
+    
+}
+header .rowtwo .container .colleft .logo {
+    width: 200px;
+    height: 80px;
+    margin-right: 60px;
+}
+header .rowtwo .container .colleft .logo img {
+    width: 100%;
+}
+header .rowtwo .container .colleft .searchBar{
+    position: relative;
+}
+header .rowtwo .container .colleft .searchBar input {
+    padding: 15px;
+    border-radius: 20px;
+    width: 350px;
+    outline: none;
+    color: #000;
+    border: none;
+    background-color: #e3e4e5;
+}
+header .rowtwo .container .colleft .searchBar input:hover {
+    border: 1px solid #000;
+}
+header .rowtwo .container .colleft .searchBar input:focus {
+    border: 1px solid #000;
+}
+header .rowtwo .container .colleft .searchBar input::placeholder {
+    color: #000;
+}
+header .rowtwo .container .colleft .searchBar button {
+    padding: 15px 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #1498d5;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+header .rowtwo .container .colleft .searchBar button:hover {
+    background-color: #000;
+}
+header .rowtwo .container .colright ul {
+    display: flex;
+}
+header .rowtwo .container .colright ul li {
+    list-style: none;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header .rowtwo .container .colright ul li a {
+    color: #000;
+    text-decoration: none;
+}
+header .rowtwo .container .colright ul li i {
+    margin-right: 10px;
+    font-size: 30px;
+}
+header .rowtwo .container .colright ul .zero {
+    color: #fff;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+}
+header .rowtwo .container .colright .responsiveBar {
+    font-size: 30px;
+    display: none;
+}
+header .rowtwo .searchBarResponsive {
+    display: none;
+}
+/* Rowthree */
+header .rowthree {
+    background-color: #e3e4e5;
+    padding: 15px 15px 15px 40px;
+    width: 100%;
+}
+header .rowthree ul {
+    display: flex;
+}
+header .rowthree ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+header .rowthree ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: .4s;
+}
+header .rowthree ul li a:hover {
+    color: #1498d5;
+}
+/* RESPONSIVE MENU */
+header .responsiveMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 55px;
+    background-color: #fff;
+    display: none;
+}
+header .responsiveMenu .firstPart {
+    margin: 25px;
+    margin-bottom: 0;
+}
+header .responsiveMenu .firstPart .firstOne ul {
+    display: flex;
+    justify-content: space-between;
+}
+header .responsiveMenu .firstPart .firstOne ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+header .responsiveMenu .firstPart .firstOne ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+header .responsiveMenu .firstPart .firstOne ul li i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+header .responsiveMenu .firstPart .firstSecond ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header .responsiveMenu .firstPart .firstSecond ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+header .responsiveMenu .firstPart .firstSecond ul li a {
+    color: #000;
+    text-decoration: none;
+}
+header .responsiveMenu .firstPart .firstSecond ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+header .responsiveMenu .secondPart {
+    background-color: #e3e4e5;
+}
+header .responsiveMenu .secondPart .container ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+}
+header .responsiveMenu .secondPart .container ul .withoutBorder {
+    border-bottom: none;
+}
+header .responsiveMenu .secondPart .container ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.test {
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+}
+.testdos {
+    width: 100%;
+    height: 100vh;
+    background-color: chartreuse;
+}
+.testtres {
+    width: 100%;
+    height: 2000px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* R E S P O N S I V E      T A B L E T*/
+@media screen and (max-width: 1100px) {
+    /* HEADER SECTION */
+    /* Rowone */
+    header .rowone {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowone .asistenBar {
+        display: none;
+    }
+    /* Rowtwo */
+    header .rowtwo {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowtwo .container {
+        padding: 0;
+        align-items: center;
+        height: fit-content;
+    }
+    header .rowtwo .container .colleft .logo  {
+        margin-right: 0;
+    }
+    header .rowtwo .container .colleft .searchBar {
+        display: none;
+    }
+    header .rowtwo .container .colleft .logo {
+        width: 200px;
+        height: 100%;
+    }
+    header .rowtwo .container .colright .hideItem {
+        display: initial;
+    }
+    header .rowtwo .container .colright .responsiveBar {
+        display: inline;
+        margin-right: 0;
+    }
+    /* SEARCHBARRESPONSIVE */
+    header .rowtwo .searchBarResponsive{
+        display: inline-block;
+        position: relative;
+        margin-top: 15px;
+        width: 100%;
+    }
+    header .rowtwo .searchBarResponsive input {
+        padding: 15px;
+        border-radius: 20px;
+        width: 100%;
+        outline: none;
+        color: #000;
+        border: none;
+        background-color: #e3e4e5;
+    }
+    header .rowtwo .searchBarResponsive input:hover {
+        border: 1px solid #000;
+    }
+    header .rowtwo .searchBarResponsive input:focus {
+        border: 1px solid #000;
+    }
+    header .rowtwo .searchBarResponsive input::placeholder {
+        color: #000;
+    }
+    header .rowtwo .searchBarResponsive button {
+        padding: 15px 30px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #1498d5;
+        color: #fff;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+    header .rowtwo .searchBarResponsive button:hover {
+        background-color: #000;
+    }
+    /* Rowthree */
+    header .rowthree {
+        display: none;
+    }
+    /* RESPONSIVE MENU */
+    header .responsiveMenu {
+    display: none;
+    }
+}
+/* R E S P O N S I V E      C E L L P H O N E*/
+@media screen and (max-width: 640px) {
+    header {
+        overflow-y: scroll;
+    }
+    /* Rowone */
+    header .rowone {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowone .asistenBar {
+        display: none;
+    }
+    /* Rowtwo */
+    header .rowtwo {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowtwo .container {
+        padding: 0;
+        align-items: center;
+        height: fit-content;
+    }
+    header .rowtwo .container .colleft .logo  {
+        margin-right: 0;
+    }
+    header .rowtwo .container .colleft .searchBar {
+        display: none;
+    }
+    header .rowtwo .container .colleft .logo {
+        width: 150px;
+        height: 100%;
+    }
+    header .rowtwo .container .colright .hideItem {
+        display: none;
+    }
+    header .rowtwo .container .colright .responsiveBar {
+        display: inline;
+        margin-right: 0;
+    }
+    /* SEARCHBARRESPONSIVE */
+    header .rowtwo .searchBarResponsive{
+        display: inline-block;
+        position: relative;
+        margin-top: 15px;
+        width: 100%;
+    }
+    header .rowtwo .searchBarResponsive input {
+        padding: 15px;
+        border-radius: 20px;
+        width: 100%;
+        outline: none;
+        color: #000;
+        border: none;
+        background-color: #e3e4e5;
+    }
+    header .rowtwo .searchBarResponsive input:hover {
+        border: 1px solid #000;
+    }
+    header .rowtwo .searchBarResponsive input::placeholder {
+        color: #000;
+    }
+    header .rowtwo .searchBarResponsive button {
+        padding: 15px 30px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #1498d5;
+        color: #fff;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+    header .rowtwo .searchBarResponsive button:hover {
+        background-color: #000;
+    }
+    /* Rowthree */
+    header .rowthree {
+        display: none;
+    }
+    /* RESPONSIVE MENU */
+    header .responsiveMenu {
+        display: none;
+    }
+}
+
+
