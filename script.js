@@ -30,7 +30,8 @@ window.onscroll = function () {
 // Sliding background img
 const imgArray = [
     "url(img/img-1.jpg)",
-    "url(img/img-2.jpg)"
+    "url(img/img-2.jpg)",
+    "url(img/img-3.jpg)"
 ]
 
 let bestSalesOne = document.getElementById("bestSalesOne");
