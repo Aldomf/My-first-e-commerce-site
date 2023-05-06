@@ -291,7 +291,7 @@ header .responsiveMenu .secondPart .container ul li a {
     transition: all 0.5s;
 }
 .bestSalesOne .text button:hover {
-    background-color: #000;
+    background-color: #ff681f;
 }
 .bestSalesOne .text button a {
     text-decoration: none;
@@ -520,7 +520,7 @@ header .responsiveMenu .secondPart .container ul li a {
     transition: all 0.5s;
 }
 .sectionFour button:hover {
-    background-color: #000;
+    background-color: #ff681f;
 }
 /* SECTION FIVE */
 .sectionFive {
@@ -629,8 +629,76 @@ header .responsiveMenu .secondPart .container ul li a {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
+/* SECTION SIX */
+.sectionSix {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+}
+.sectionSix .containerLeft {
+    height: 600px;
+    width: 70%;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    background-image: url(img/sect6.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionSix .containerLeft .circle p {
+    display: none;
+}
+.sectionSix .containerRight {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sectionSix .containerRight .text .circle {
+    position: absolute;
+    top: 60px;
+    left: -150px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #ff681f;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.sectionSix .containerRight .text .circle p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    transform: rotate(20deg); 
+    font-weight: bold;
+}
+.sectionSix .containerRight .text h1 {
+    font-size: 30px;
+}
+.sectionSix .containerRight .text span {
+    font-size: 90px;
+}
+.sectionSix .containerRight .text p {
+    margin-top: 15px;
+}
+.sectionSix .containerRight .text button {
+    border: none;
+    background-color: #1498d5;
+    border-radius: 50px;
+    margin-top: 40px;
+    padding: 13px 52px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.sectionSix .containerRight .text button:hover {
+    background-color: #ff681f;
+}
 
 
 
@@ -759,7 +827,7 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionOne .textResponsive p:first-child {
         color: #fff;
         font-size: 20px;
-        background-color: rgb(188, 8, 8);
+        background-color: #ff681f;
         width: fit-content;
         padding: 0 10px;
         margin-bottom: 20px;
@@ -839,9 +907,71 @@ header .responsiveMenu .secondPart .container ul li a {
         transform: none;
     }
     /* SECTION FIVE */
-.sectionFive {
+    .sectionFive {
     margin: 50px 0;
-}
+    }
+    /* SECTION SIX */
+    .sectionSix {
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionSix .containerLeft {
+        height: 500px;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        background-position: right;
+        position: relative;
+    }
+    .sectionSix .containerLeft .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: #ff681f;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    }
+    .sectionSix .containerLeft .circle p {
+        display: initial;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        transform: rotate(20deg); 
+        font-weight: bold;
+    }
+    .sectionSix .containerRight {
+        height: 500px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .sectionSix .containerRight .text {
+        margin-left: 40px;
+    }
+    .sectionSix .containerRight .text .circle {
+        display: none;
+    }
+    .sectionSix .containerRight .text .circle p {
+        display: none;
+    }
+    .sectionSix .containerRight .text h1 {
+        font-size: 40px;
+    }
+    .sectionSix .containerRight .text span {
+        font-size: 110px;
+    }
+    .sectionSix .containerRight .text p {
+        font-size: 25px;
+    }
+    .sectionSix .containerRight .text button {
+        font-size: 18px;
+        padding: 13px 60px;
+    }
 }
 /* R E S P O N S I V E      C E L L P H O N E*/
 @media screen and (max-width: 640px) {
@@ -1075,6 +1205,70 @@ header .responsiveMenu .secondPart .container ul li a {
         width: 250px;
         height: 250px;
         border-radius: 100%;
+    }
+    /* SECTION SIX */
+    .sectionSix {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionSix .containerLeft {
+        height: 300px;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        background-position: right;
+        position: relative;
+    }
+    .sectionSix .containerLeft .circle {
+        display: initial;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #ff681f;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    }
+    .sectionSix .containerLeft .circle p {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        transform: rotate(20deg); 
+        font-weight: bold;
+    }
+    .sectionSix .containerRight {
+        width: 100%;
+        height: 350px;
+        justify-content: flex-start;
+    }
+    .sectionSix .containerRight .text {
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+    .sectionSix .containerRight .text .circle {
+        display: none;
+    }
+    .sectionSix .containerRight .text .circle p {
+        display: none;
+    }
+    .sectionSix .containerRight .text h1 {
+        font-size: 25px;
+    }
+    .sectionSix .containerRight .text span {
+        font-size: 60px;
+    }
+    .sectionSix .containerRight .text p {
+        font-size: 15px;
+    }
+    .sectionSix .containerRight .text button {
+        margin-top: 20px;
+        padding: 13px 45px;
     }
 }
 
