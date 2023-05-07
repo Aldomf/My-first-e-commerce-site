@@ -666,6 +666,7 @@ header .responsiveMenu .secondPart .container ul li a {
 }
 .sectionSix .containerRight .text span {
     font-size: 90px;
+    color: #1498d5;
 }
 .sectionSix .containerRight .text p {
     margin-top: 15px;
@@ -788,7 +789,6 @@ header .responsiveMenu .secondPart .container ul li a {
     margin-right: 20px;
     color: #000;
 }
-
 .sectionSeven button {
     background-color: #1498d5;
     margin: 30px 0 70px 0;
@@ -801,6 +801,63 @@ header .responsiveMenu .secondPart .container ul li a {
     transition: all 0.5s;
 }
 .sectionSeven button:hover {
+    background-color: #ff681f;
+}
+/* SECTION EIGHT */
+.sectionEight {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+}
+.sectionEight .containerRight {
+    height: 600px;
+    width: 70%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    background-image: url(img/sect8.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionEight .containerLeft .text {
+    margin-left: 40px;
+}
+.sectionEight .containerLeft {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionEight .containerLeft .text p:first-child {
+    color: #fff;
+    font-size: 20px;
+    background-color: #ff681f;
+    width: fit-content;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.sectionEight .containerLeft .text h1 {
+    font-size: 30px;
+}
+.sectionEight .containerLeft .text span {
+    font-size: 90px;
+    color: #1498d5;
+}
+.sectionEight .containerLeft .text p {
+    margin-top: 15px;
+}
+.sectionEight .containerLeft .text button {
+    border: none;
+    background-color: #1498d5;
+    border-radius: 50px;
+    margin-top: 40px;
+    padding: 13px 52px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.sectionEight .containerLeft .text button:hover {
     background-color: #ff681f;
 }
 
@@ -1085,6 +1142,51 @@ header .responsiveMenu .secondPart .container ul li a {
     }
     .sectionSeven .container ul li .art:hover {
         transform: none;
+    }
+    /* SECTION EIGHT */
+    .sectionEight {
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionEight .containerRight {
+        height: 500px;
+        width: 100%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        background-position: right;
+    }
+    .sectionEight .containerLeft {
+        height: 500px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .sectionEight .containerLeft .text {
+        margin-left: 40px;
+    }
+    .sectionEight .containerLeft .text p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .sectionEight .containerLeft .text h1 {
+        font-size: 40px;
+    }
+    .sectionEight .containerLeft .text span {
+        font-size: 110px;
+    }
+    .sectionEight .containerLeft .text p {
+        font-size: 25px;
+    }
+    .sectionEight .containerLeft .text button {
+        font-size: 18px;
+        padding: 13px 60px;
+    }
+    .sectionEight .containerLeft .text button:hover {
+        background-color: #ff681f;
     }
 }
 /* R E S P O N S I V E      C E L L P H O N E*/
@@ -1418,6 +1520,58 @@ header .responsiveMenu .secondPart .container ul li a {
     }
     .sectionSeven .container ul li .oldPrice {
         font-size: 20px;
+    }
+    /* SECTION EIGHT */
+    .sectionEight {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionEight .containerRight {
+        height: 300px;
+        width: 100%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        background-position: center;
+    }
+    .sectionEight .containerLeft {
+        width: 100%;
+        height: 350px;
+        justify-content: flex-start;
+    }
+    .sectionEight .containerLeft .text {
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+    .sectionEight .containerLeft .text p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    .sectionEight .containerLeft .text h1 {
+        font-size: 25px;
+    }
+    .sectionEight .containerLeft .text span {
+        font-size: 60px;
+    }
+    .sectionEight .containerLeft .text p {
+        font-size: 15px;
+    }
+    .sectionEight .containerLeft .text button {
+        margin-top: 20px;
+        padding: 13px 45px;
+    }
+}
+/* GALAXY FOLD */
+@media screen and (max-width: 340px) {
+    /* SECTION EIGHT */
+    .sectionEight .containerLeft {
+        height: 400px;
     }
 }
 
