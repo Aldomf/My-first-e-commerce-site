@@ -388,7 +388,7 @@ header .responsiveMenu .secondPart .container ul li a {
     font-size: 50px;
     margin-right: 20px;
 }
-/* SECTION FOUR */
+/* SECTION FOUR */ 
 .sectionFour {
     height: 100%;
     background-color: #fff;
@@ -462,21 +462,6 @@ header .responsiveMenu .secondPart .container ul li a {
     background-repeat: no-repeat;
 }
 @media screen and (max-width: 1331px) {
-    .sectionFour .container ul li .art {
-        height: 59%;
-    }
-    .sectionFour .container ul li .art {
-        height: 59%;
-    }
-    .sectionFour .container ul li .art {
-        height: 59%;
-    }
-    .sectionFour .container ul li .art {
-        height: 59%;
-    }
-    .sectionFour .container ul li .art {
-        height: 59%;
-    }
     .sectionFour .container ul li .art {
         height: 59%;
     }
@@ -697,6 +682,125 @@ header .responsiveMenu .secondPart .container ul li a {
     transition: all 0.5s;
 }
 .sectionSix .containerRight .text button:hover {
+    background-color: #ff681f;
+}
+/* SECTION SEVEN */
+.sectionSeven {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionSeven .heading {
+    margin: 70px;
+    font-size: 20px;
+}
+.sectionSeven .container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.sectionSeven .container ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    width: 95%;
+}
+.sectionSeven .container ul li {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #e3e4e5;
+}
+.sectionSeven .container ul li .art7 {
+    height: 70%;
+    background-image: url(img/art7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art8 {
+    height: 70%;
+    background-image: url(img/art8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art9 {
+    height: 70%;
+    background-image: url(img/art9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art10 {
+    height: 70%;
+    background-image: url(img/art10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art11 {
+    height: 70%;
+    background-image: url(img/art11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art12 {
+    height: 70%;
+    background-image: url(img/art12.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 1331px) {
+    .sectionSeven .container ul li .art {
+        height: 59%;
+    }
+}
+.sectionSeven .container ul li .off .offer {
+    background-color: #ff681f;
+    color: #fff;
+    width: fit-content;
+    padding: 2px 20px;
+    font-size: 15px;
+}
+.sectionSeven .container ul li .descr {
+    margin: 0 10px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.sectionSeven .container ul li .price {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    color: #1498d5;
+    font-size: 20px;
+    width: fit-content;
+}
+.sectionSeven .container ul li .oldPrice {
+    text-decoration: line-through;
+    font-size: 15px;
+    margin-right: 20px;
+    color: #000;
+}
+
+.sectionSeven button {
+    background-color: #1498d5;
+    margin: 30px 0 70px 0;
+    padding: 15px 100px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.sectionSeven button:hover {
     background-color: #ff681f;
 }
 
@@ -971,6 +1075,16 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionSix .containerRight .text button {
         font-size: 18px;
         padding: 13px 60px;
+    }
+    /* SECTION SEVEN */
+    .sectionSeven {
+        margin: 50px 0;
+    }
+    .sectionSeven .container ul li .art {
+        height: 47%;
+    }
+    .sectionSeven .container ul li .art:hover {
+        transform: none;
     }
 }
 /* R E S P O N S I V E      C E L L P H O N E*/
@@ -1269,6 +1383,41 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionSix .containerRight .text button {
         margin-top: 20px;
         padding: 13px 45px;
+    }
+    /* SECTION SEVEN */
+    .sectionSeven {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionSeven .heading {
+        margin: 70px 0;
+    }
+    .sectionSeven .container {
+        height: 100%;
+    }
+    .sectionSeven .container ul {
+        flex-direction: column;
+        margin: 0 5%;
+        width: 100%;
+    }
+    .sectionSeven .container ul li {
+        height: 450px;
+        margin-bottom: 20px;
+    }
+    .sectionSeven .container ul li:last-child {
+        margin-bottom: 0;
+    }
+    .sectionSeven .container ul li .art {
+        height: 78%;
+    }
+    .sectionSeven .container ul li .off .offer {
+        font-size: 18px;
+    }
+    .sectionSeven .container ul li .price {
+        font-size: 25px;
+    }
+    .sectionSeven .container ul li .oldPrice {
+        font-size: 20px;
     }
 }
 
