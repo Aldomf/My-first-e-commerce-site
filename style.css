@@ -860,6 +860,65 @@ header .responsiveMenu .secondPart .container ul li a {
 .sectionEight .containerLeft .text button:hover {
     background-color: #ff681f;
 }
+/* SECTION NINE */
+.sectionNine {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+.sectionNine .container {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionNine .container .title {
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+.sectionNine .container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sectionNine .container ul li {
+    height: 140px;
+    width: 240px;
+    list-style: none;
+    border: 1px solid #e3e4e5;
+}
+.sectionNine .container ul .braOne {
+    background-image: url(img/braOne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braTwo {
+    background-image: url(img/braTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braThree {
+    background-image: url(img/braThree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braFour {
+    background-image: url(img/braFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braFive {
+    background-image: url(img/braFive.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -1069,7 +1128,7 @@ header .responsiveMenu .secondPart .container ul li a {
     }
     /* SECTION FIVE */
     .sectionFive {
-    margin: 50px 0;
+        margin: 50px 0;
     }
     /* SECTION SIX */
     .sectionSix {
@@ -1187,6 +1246,10 @@ header .responsiveMenu .secondPart .container ul li a {
     }
     .sectionEight .containerLeft .text button:hover {
         background-color: #ff681f;
+    }
+    /* SECTION NINE */
+    .sectionNine {
+        margin: 50px 0;
     }
 }
 /* R E S P O N S I V E      C E L L P H O N E*/
@@ -1566,12 +1629,26 @@ header .responsiveMenu .secondPart .container ul li a {
         margin-top: 20px;
         padding: 13px 45px;
     }
+    /* SECTION NINE */
+    .sectionNine {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionNine .container ul li {
+        height: 200px;
+        width: 300px;
+    }
 }
 /* GALAXY FOLD */
 @media screen and (max-width: 340px) {
     /* SECTION EIGHT */
     .sectionEight .containerLeft {
         height: 400px;
+    }
+    /* SECTION NINE */
+    .sectionNine .container ul li {
+        height: 140px;
+        width: 240px;
     }
 }
 
