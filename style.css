@@ -1033,6 +1033,43 @@ header .responsiveMenu .secondPart .container ul li a {
     background-color: #fff;
     color: #000;
 }
+/* SECTION TWELVE */
+.sectionTwelve {
+    background-color: #fff;
+    padding: 70px;
+}
+.sectionTwelve .container {
+    display: flex;
+    justify-content: space-between;
+}
+.sectionTwelve .container h3 {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+.sectionTwelve .container p {
+    margin-bottom: 15px;
+    color: rgb(70, 70, 70);
+}
+.sectionTwelve .container .sub {
+    display: flex;
+    flex-direction: column;
+}
+.sectionTwelve .container a {
+    margin-bottom: 15px;
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    cursor: pointer;
+}
+.sectionTwelve .container .pointer a:hover {
+    color: #1498d5;
+}
+.sectionTwelve .container .icon {
+    margin-top: 25px;
+}
+.sectionTwelve .container .icon span {
+    font-size: 20px;
+    margin-right: 10px;
+}
 
 
 
@@ -1424,6 +1461,11 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionEleven .containerLeft .text button {
         font-size: 18px;
         padding: 13px 60px;
+    }
+    /* SECTION TWELVE */
+    .sectionTwelve {
+        background-color: #fff;
+        padding: 70px 10px;
     }
 }
 /* R E S P O N S I V E      C E L L P H O N E*/
@@ -1884,6 +1926,19 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionEleven .containerLeft .text button {
         margin-top: 20px;
         padding: 13px 45px;
+    }
+    /* SECTION TWELVE */
+    .sectionTwelve {
+        background-color: #fff;
+        padding: 70px 0px;
+    }
+    .sectionTwelve .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTwelve .container .sub {
+        margin-bottom: 70px;
+        text-align: center;
     }
 }
 /* GALAXY FOLD */
