@@ -1145,6 +1145,14 @@ header .responsiveMenu .secondPart .container ul li a {
     background-size: cover;
     margin-right: 0;
 }
+/* SECTION FOURTEEN */
+.sectionFourteen {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+}
 
 
 
