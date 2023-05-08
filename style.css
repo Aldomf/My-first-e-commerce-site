@@ -1070,6 +1070,81 @@ header .responsiveMenu .secondPart .container ul li a {
     font-size: 20px;
     margin-right: 10px;
 }
+/* SECTION THIRTEEN */
+.sectionThirteen {
+    background-color: #fff;
+    padding: 70px 7%;
+}
+.sectionThirteen .container {
+    border-top: 2px solid #e3e4e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionThirteen .container p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+}
+.sectionThirteen .container ul {
+    display: flex;
+}
+.sectionThirteen .container ul li {
+    list-style: none;
+    width: 60px;
+    height: 40px;
+    margin-right: 70px;
+}
+.sectionThirteen .container ul .bank1 {
+    background-image: url(img/bank1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank2 {
+    background-image: url(img/bank2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank3 {
+    background-image: url(img/bank3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank4 {
+    background-image: url(img/bank4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank5 {
+    background-image: url(img/bank5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank6 {
+    background-image: url(img/bank6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank7 {
+    background-image: url(img/bank7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank8 {
+    background-image: url(img/bank8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
 
 
 
@@ -1466,6 +1541,18 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionTwelve {
         background-color: #fff;
         padding: 70px 10px;
+    }
+    /* SECTION THIRTEEN */
+    .sectionThirteen .container ul {
+        display: grid;
+        column-gap: 70px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sectionThirteen .container ul li {
+        margin-right: 0px;
+    }
+    .sectionThirteen .container ul .but {
+        margin-bottom: 20px;
     }
 }
 /* R E S P O N S I V E      C E L L P H O N E*/
@@ -1931,6 +2018,7 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionTwelve {
         background-color: #fff;
         padding: 70px 0px;
+        padding-bottom: 10px;
     }
     .sectionTwelve .container {
         flex-direction: column;
@@ -1938,6 +2026,18 @@ header .responsiveMenu .secondPart .container ul li a {
     }
     .sectionTwelve .container .sub {
         margin-bottom: 70px;
+        text-align: center;
+    }
+    /* SECTION THIRTEEN */
+    .sectionThirteen {
+        background-color: #fff;
+        padding: 70px 7%;
+        padding-top: 0;
+    }
+    .sectionThirteen .container ul {
+        column-gap: 20px;
+    }
+    .sectionThirteen .container p {
         text-align: center;
     }
 }
@@ -1951,6 +2051,17 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionNine .container ul li {
         height: 140px;
         width: 240px;
+    }
+    /* SECTION THIRTEEN */
+    .sectionThirteen .container ul {
+        column-gap: 10px;
+    }
+    .sectionThirteen .container p {
+        text-align: center;
+    }
+    .sectionThirteen .container ul li {
+        width: 50px;
+        height: 30px;
     }
 }
 
