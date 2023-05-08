@@ -919,6 +919,63 @@ header .responsiveMenu .secondPart .container ul li a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* SECTION TEN */
+.sectionTen {
+    height: 100%;
+    background-color: #1498d5;
+    color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+.sectionTen .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.sectionTen .container h1 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+.sectionTen .subcontainer p {
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size: 17px;
+}
+.sectionTen .subcontainer .emailBar{
+    position: relative;
+}
+.sectionTen .subcontainer .emailBar input {
+    border: 1px solid #ff681f;
+    padding: 15px;
+    border-radius: 50px;
+    width: 815px;
+    outline: none;
+    color: #000;
+}
+.sectionTen .subcontainer .emailBar input::placeholder {
+    font-size: 16px;
+}
+.sectionTen .subcontainer .emailBar button {
+    font-size: 16px;
+    padding: 15px 85px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+.sectionTen .subcontainer .emailBar button:hover {
+    background-color: #ff681f;
+}
+
 
 
 
@@ -1250,6 +1307,24 @@ header .responsiveMenu .secondPart .container ul li a {
     /* SECTION NINE */
     .sectionNine {
         margin: 50px 0;
+    }
+    /* SECTION TEN */
+    .sectionTen {
+        margin: 50px 0;
+    }
+    .sectionTen .container {
+        width: 80%;
+    }
+    .sectionTen .subcontainer {
+        width: 100%;
+    }
+    .sectionTen .subcontainer .emailBar{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+    .sectionTen .subcontainer .emailBar input {
+        width: 100%;
     }
 }
 /* R E S P O N S I V E      C E L L P H O N E*/
@@ -1637,6 +1712,35 @@ header .responsiveMenu .secondPart .container ul li a {
     .sectionNine .container ul li {
         height: 200px;
         width: 300px;
+    }
+    /* SECTION TEN */
+    .sectionTen {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionTen .container>p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .sectionTen .subcontainer p {
+        text-align: center;
+        margin-left: 0;
+    }
+    .sectionTen .subcontainer .emailBar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sectionTen .subcontainer .emailBar input {
+        border: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .sectionTen .subcontainer .emailBar button {
+        border: none;
+        padding: 15px 0px;
+        width: 100%;
+        position: initial;
     }
 }
 /* GALAXY FOLD */
