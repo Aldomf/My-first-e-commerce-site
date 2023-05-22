@@ -2074,6 +2074,11 @@ header .responsiveMenu .secondPart .container ul li a {
 }
 
 @media screen and (max-height: 650px) {
+    .bestSalesOne .text {
+        width: fit-content;
+        margin-bottom: 4%;
+        margin-left: 15%;
+    }
     .bestSalesOne .text p:first-child {
         color: #fff;
         font-size: 20px;
