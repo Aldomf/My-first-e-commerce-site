@@ -1,0 +1,2076 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body { 
+    box-sizing: border-box;
+    background-color: #e3e4e5;
+}
+/* HEADER SECTION */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s;
+    z-index: 1000;
+}
+/* Rowone */
+header .rowone {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 15px 15px 40px;
+    width: 100%;
+    margin-bottom: 0;
+}
+header .rowone .colleft i {
+    margin-right: 15px;
+}
+header .rowone .asistenBar {
+    display: flex;
+    list-style: none;
+}
+header .rowone .asistenBar li {
+    margin-left: 30px;
+}
+header .rowone .asistenBar a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Rowtwo */
+header .rowtwo  {
+    background-color: #fff;
+    padding: 15px 15px 15px 40px;
+    width: 100%;
+    margin-top: 0;
+}
+header .rowtwo .container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+header .rowtwo .container .colleft {
+    display: flex;
+    align-items: center;
+    
+}
+header .rowtwo .container .colleft .logo {
+    width: 200px;
+    height: 80px;
+    margin-right: 60px;
+}
+header .rowtwo .container .colleft .logo img {
+    width: 100%;
+}
+header .rowtwo .container .colleft .searchBar{
+    position: relative;
+}
+header .rowtwo .container .colleft .searchBar input {
+    padding: 15px;
+    border-radius: 20px;
+    width: 350px;
+    outline: none;
+    color: #000;
+    border: none;
+    background-color: #e3e4e5;
+}
+header .rowtwo .container .colleft .searchBar input:hover {
+    border: 1px solid #000;
+}
+header .rowtwo .container .colleft .searchBar input:focus {
+    border: 1px solid #000;
+}
+header .rowtwo .container .colleft .searchBar input::placeholder {
+    color: #000;
+}
+header .rowtwo .container .colleft .searchBar button {
+    padding: 15px 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #1498d5;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+header .rowtwo .container .colleft .searchBar button:hover {
+    background-color: #000;
+}
+header .rowtwo .container .colright ul {
+    display: flex;
+}
+header .rowtwo .container .colright ul li {
+    list-style: none;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header .rowtwo .container .colright ul li a {
+    color: #000;
+    text-decoration: none;
+}
+header .rowtwo .container .colright ul li i {
+    margin-right: 10px;
+    font-size: 30px;
+}
+header .rowtwo .container .colright ul .zero {
+    color: #fff;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+}
+header .rowtwo .container .colright .responsiveBar {
+    font-size: 30px;
+    display: none;
+}
+header .rowtwo .searchBarResponsive {
+    display: none;
+}
+/* Rowthree */
+header .rowthree {
+    background-color: #e3e4e5;
+    padding: 15px 15px 15px 40px;
+    width: 100%;
+}
+header .rowthree ul {
+    display: flex;
+}
+header .rowthree ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+header .rowthree ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: .4s;
+}
+header .rowthree ul li a:hover {
+    color: #1498d5;
+}
+/* RESPONSIVE MENU */
+header .responsiveMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 55px;
+    background-color: #fff;
+    display: none;
+}
+header .responsiveMenu .firstPart {
+    margin: 25px;
+    margin-bottom: 0;
+}
+header .responsiveMenu .firstPart .firstOne ul {
+    display: flex;
+    justify-content: space-between;
+}
+header .responsiveMenu .firstPart .firstOne ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+header .responsiveMenu .firstPart .firstOne ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+header .responsiveMenu .firstPart .firstOne ul li i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+header .responsiveMenu .firstPart .firstSecond ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header .responsiveMenu .firstPart .firstSecond ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+header .responsiveMenu .firstPart .firstSecond ul li a {
+    color: #000;
+    text-decoration: none;
+}
+header .responsiveMenu .firstPart .firstSecond ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+header .responsiveMenu .secondPart {
+    background-color: #e3e4e5;
+}
+header .responsiveMenu .secondPart .container ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+}
+header .responsiveMenu .secondPart .container ul .withoutBorder {
+    border-bottom: none;
+}
+header .responsiveMenu .secondPart .container ul li a {
+    color: #000;
+    text-decoration: none;
+}
+/* SECTION  ONE */
+.textResponsive {
+    display: none;
+}
+.bestSalesOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bestSalesOne .text {
+    width: fit-content;
+    margin-bottom: 100px;
+    margin-left: 15%;
+}
+.bestSalesOne .text p:first-child {
+    color: #fff;
+    font-size: 20px;
+    background-color: #ff681f;
+    width: fit-content;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.bestSalesOne .text h1 {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.bestSalesOne .text span {
+    margin-bottom: 20px;
+    width: fit-content;
+    font-size: 20px;
+    display: block;
+}
+.bestSalesOne .text button {
+    background-color: #1498d5;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 73px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+}
+.bestSalesOne .text button:hover {
+    background-color: #ff681f;
+}
+.bestSalesOne .text button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* SECTION TWO */
+.sectionTwo {
+    padding: 50px;
+    background-color: #e3e4e5;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sectionTwo .container {
+    height: 500px;
+    width: 48%;
+    border: 5px solid rgb(1, 1, 180);
+}
+.sectionTwo .left {
+    background-image: url(img/img-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionTwo .right {
+    background-image: url(img/img-8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionTwo .container .text {
+    margin: 10%;
+}
+.sectionTwo .text p:first-child {
+    color: #fff;
+    font-size: 20px;
+    width: fit-content;
+    padding: 0 10px;
+    background-color: rgb(1, 1, 180);
+    margin-bottom: 15px;
+}
+.sectionTwo .text h1 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.sectionTwo .text span {
+    margin-bottom: 15px;
+    width: fit-content;
+    font-size: 20px;
+    display: block;
+    color: #fff;
+}
+.sectionTwo .text button {
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.sectionTwo .text button:hover {
+    background-color: rgb(1, 1, 180);
+    color: #fff;
+}
+/* SECTION THREE */
+.sectionThree {
+    margin: 0 50px 50px 50px;
+    background-color: #fff;
+    padding: 70px 0;
+}
+.sectionThree .container {
+    margin: 0 50px;
+}
+.sectionThree .container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sectionThree .container ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sectionThree .container ul li i {
+    color: #1498d5;
+    font-size: 50px;
+    margin-right: 20px;
+}
+/* SECTION FOUR */ 
+.sectionFour {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionFour .heading {
+    margin: 70px;
+    font-size: 20px;
+}
+.sectionFour .container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.sectionFour .container ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    width: 95%;
+}
+.sectionFour .container ul li {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #e3e4e5;
+}
+.sectionFour .container ul li .art1 {
+    height: 70%;
+    background-image: url(img/art1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionFour .container ul li .art2 {
+    height: 70%;
+    background-image: url(img/art2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionFour .container ul li .art3 {
+    height: 70%;
+    background-image: url(img/art3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionFour .container ul li .art4 {
+    height: 70%;
+    background-image: url(img/art4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionFour .container ul li .art5 {
+    height: 70%;
+    background-image: url(img/art5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionFour .container ul li .art6 {
+    height: 70%;
+    background-image: url(img/art6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 1331px) {
+    .sectionFour .container ul li .art {
+        height: 59%;
+    }
+}
+.sectionFour .container ul li .off .offer {
+    background-color: #ff681f;
+    color: #fff;
+    width: fit-content;
+    padding: 2px 20px;
+    font-size: 15px;
+}
+.sectionFour .container ul li .descr {
+    margin: 0 10px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.sectionFour .container ul li .price {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    color: #1498d5;
+    font-size: 20px;
+    width: fit-content;
+}
+.sectionFour .container ul li .oldPrice {
+    text-decoration: line-through;
+    font-size: 15px;
+    margin-right: 20px;
+    color: #000;
+}
+
+.sectionFour button {
+    background-color: #1498d5;
+    margin: 30px 0 70px 0;
+    padding: 15px 100px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.sectionFour button:hover {
+    background-color: #ff681f;
+}
+/* SECTION FIVE */
+.sectionFive {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionFive .heading {
+    margin: 70px;
+    font-size: 20px;
+}
+.sectionFive .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    width: 90%;
+}
+.sectionFive .subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 21px;
+    margin-bottom: 70px;
+}
+.sectionFive .subcontainer .img{
+    margin-bottom: 20px;
+}
+.sectionFive .subcontainer p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.sectionFive .subcontainer .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.sectionFive .subcontainer .one {
+    background-image: url(img/cat1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionFive .subcontainer .two {
+    background-image: url(img/cat2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionFive .subcontainer .three {
+    background-image: url(img/cat3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionFive .subcontainer .four {
+    background-color: #1498d5;
+    background-image: url(img/cat4.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+}
+.sectionFive .subcontainer .five {
+    background-image: url(img/cat5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionFive .subcontainer .six {
+    background-image: url(img/cat6.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 90px;
+}
+.sectionFive .subcontainer .seven {
+    background-image: url(img/cat7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionFive .subcontainer .eight {
+    background-image: url(img/cat8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionFive .subcontainer .nine {
+    background-image: url(img/cat9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionFive .subcontainer .ten {
+    background-image: url(img/cat10.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* SECTION SIX */
+.sectionSix {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+}
+.sectionSix .containerLeft {
+    height: 600px;
+    width: 70%;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    background-image: url(img/sect6.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionSix .containerLeft .circle p {
+    display: none;
+}
+.sectionSix .containerRight {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sectionSix .containerRight .text .circle {
+    position: absolute;
+    top: 60px;
+    left: -150px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #ff681f;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.sectionSix .containerRight .text .circle p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    transform: rotate(20deg); 
+    font-weight: bold;
+}
+.sectionSix .containerRight .text h1 {
+    font-size: 30px;
+}
+.sectionSix .containerRight .text span {
+    font-size: 90px;
+    color: #1498d5;
+}
+.sectionSix .containerRight .text p {
+    margin-top: 15px;
+}
+.sectionSix .containerRight .text button {
+    border: none;
+    background-color: #1498d5;
+    border-radius: 50px;
+    margin-top: 40px;
+    padding: 13px 52px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.sectionSix .containerRight .text button:hover {
+    background-color: #ff681f;
+}
+/* SECTION SEVEN */
+.sectionSeven {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionSeven .heading {
+    margin: 70px;
+    font-size: 20px;
+}
+.sectionSeven .container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.sectionSeven .container ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    width: 95%;
+}
+.sectionSeven .container ul li {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #e3e4e5;
+}
+.sectionSeven .container ul li .art7 {
+    height: 70%;
+    background-image: url(img/art7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art8 {
+    height: 70%;
+    background-image: url(img/art8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art9 {
+    height: 70%;
+    background-image: url(img/art9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art10 {
+    height: 70%;
+    background-image: url(img/art10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art11 {
+    height: 70%;
+    background-image: url(img/art11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sectionSeven .container ul li .art12 {
+    height: 70%;
+    background-image: url(img/art12.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 1331px) {
+    .sectionSeven .container ul li .art {
+        height: 59%;
+    }
+}
+.sectionSeven .container ul li .off .offer {
+    background-color: #ff681f;
+    color: #fff;
+    width: fit-content;
+    padding: 2px 20px;
+    font-size: 15px;
+}
+.sectionSeven .container ul li .descr {
+    margin: 0 10px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.sectionSeven .container ul li .price {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    color: #1498d5;
+    font-size: 20px;
+    width: fit-content;
+}
+.sectionSeven .container ul li .oldPrice {
+    text-decoration: line-through;
+    font-size: 15px;
+    margin-right: 20px;
+    color: #000;
+}
+.sectionSeven button {
+    background-color: #1498d5;
+    margin: 30px 0 70px 0;
+    padding: 15px 100px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.sectionSeven button:hover {
+    background-color: #ff681f;
+}
+/* SECTION EIGHT */
+.sectionEight {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+}
+.sectionEight .containerRight {
+    height: 600px;
+    width: 70%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    background-image: url(img/sect8.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionEight .containerLeft .text {
+    margin-left: 40px;
+}
+.sectionEight .containerLeft {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionEight .containerLeft .text p:first-child {
+    color: #fff;
+    font-size: 20px;
+    background-color: #ff681f;
+    width: fit-content;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.sectionEight .containerLeft .text h1 {
+    font-size: 30px;
+}
+.sectionEight .containerLeft .text span {
+    font-size: 90px;
+    color: #1498d5;
+}
+.sectionEight .containerLeft .text p {
+    margin-top: 15px;
+}
+.sectionEight .containerLeft .text button {
+    border: none;
+    background-color: #1498d5;
+    border-radius: 50px;
+    margin-top: 40px;
+    padding: 13px 52px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.sectionEight .containerLeft .text button:hover {
+    background-color: #ff681f;
+}
+/* SECTION NINE */
+.sectionNine {
+    height: 100%;
+    background-color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+.sectionNine .container {
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionNine .container .title {
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+.sectionNine .container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sectionNine .container ul li {
+    height: 140px;
+    width: 240px;
+    list-style: none;
+    border: 1px solid #e3e4e5;
+}
+.sectionNine .container ul .braOne {
+    background-image: url(img/braOne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braTwo {
+    background-image: url(img/braTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braThree {
+    background-image: url(img/braThree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braFour {
+    background-image: url(img/braFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionNine .container ul .braFive {
+    background-image: url(img/braFive.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* SECTION TEN */
+.sectionTen {
+    height: 100%;
+    background-color: #1498d5;
+    color: #fff;
+    margin: 0 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+}
+.sectionTen .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.sectionTen .container h1 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+.sectionTen .subcontainer p {
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size: 17px;
+}
+.sectionTen .subcontainer .emailBar{
+    position: relative;
+}
+.sectionTen .subcontainer .emailBar input {
+    border: 1px solid #ff681f;
+    padding: 15px;
+    border-radius: 50px;
+    width: 815px;
+    outline: none;
+    color: #000;
+}
+.sectionTen .subcontainer .emailBar input::placeholder {
+    font-size: 16px;
+}
+.sectionTen .subcontainer .emailBar button {
+    font-size: 16px;
+    padding: 15px 85px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+.sectionTen .subcontainer .emailBar button:hover {
+    background-color: #ff681f;
+}
+/* SECTION ELEVEN */
+.sectionEleven {
+    color: #fff;
+    height: 100%;
+    background-color: #000;
+    margin: 0;
+    display: flex;
+}
+.sectionEleven .containerRight {
+    height: 450px;
+    width: 53%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+    background-image: url(img/sect11.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionEleven .containerLeft .text {
+    margin-left: 40px;
+}
+.sectionEleven .containerLeft {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionEleven .containerLeft .text p:first-child {
+    font-size: 20px;
+    background-color: #ff681f;
+    width: fit-content;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.sectionEleven .containerLeft .text h1 {
+    font-size: 30px;
+}
+.sectionEleven .containerLeft .text span {
+    font-size: 90px;
+    color: #1498d5;
+}
+.sectionEleven .containerLeft .text p {
+    margin-top: 15px;
+}
+.sectionEleven .containerLeft .text button {
+    border: none;
+    background-color: #1498d5;
+    border-radius: 50px;
+    margin-top: 40px;
+    padding: 13px 52px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.sectionEleven .containerLeft .text button:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* SECTION TWELVE */
+.sectionTwelve {
+    background-color: #fff;
+    padding: 70px;
+}
+.sectionTwelve .container {
+    display: flex;
+    justify-content: space-between;
+}
+.sectionTwelve .container h3 {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+.sectionTwelve .container p {
+    margin-bottom: 15px;
+    color: rgb(70, 70, 70);
+}
+.sectionTwelve .container .sub {
+    display: flex;
+    flex-direction: column;
+}
+.sectionTwelve .container a {
+    margin-bottom: 15px;
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    cursor: pointer;
+}
+.sectionTwelve .container .pointer a:hover {
+    color: #1498d5;
+}
+.sectionTwelve .container .icon {
+    margin-top: 25px;
+}
+.sectionTwelve .container .icon span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+/* SECTION THIRTEEN */
+.sectionThirteen {
+    background-color: #fff;
+    padding: 70px 7%;
+}
+.sectionThirteen .container {
+    border-top: 2px solid #e3e4e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionThirteen .container p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+}
+.sectionThirteen .container ul {
+    display: flex;
+}
+.sectionThirteen .container ul li {
+    list-style: none;
+    width: 60px;
+    height: 40px;
+    margin-right: 70px;
+}
+.sectionThirteen .container ul .bank1 {
+    background-image: url(img/bank1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank2 {
+    background-image: url(img/bank2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank3 {
+    background-image: url(img/bank3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank4 {
+    background-image: url(img/bank4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank5 {
+    background-image: url(img/bank5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank6 {
+    background-image: url(img/bank6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank7 {
+    background-image: url(img/bank7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionThirteen .container ul .bank8 {
+    background-image: url(img/bank8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+/* SECTION FOURTEEN */
+.sectionFourteen {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* R E S P O N S I V E      T A B L E T*/
+@media screen and (max-width: 1100px) {
+    /* HEADER SECTION */
+    /* Rowone */
+    header .rowone {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowone .asistenBar {
+        display: none;
+    }
+    /* Rowtwo */
+    header .rowtwo {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowtwo .container {
+        padding: 0;
+        align-items: center;
+        height: fit-content;
+    }
+    header .rowtwo .container .colleft .logo  {
+        margin-right: 0;
+    }
+    header .rowtwo .container .colleft .searchBar {
+        display: none;
+    }
+    header .rowtwo .container .colleft .logo {
+        width: 200px;
+        height: 100%;
+    }
+    header .rowtwo .container .colright .hideItem {
+        display: initial;
+    }
+    header .rowtwo .container .colright .responsiveBar {
+        display: inline;
+        margin-right: 0;
+    }
+    /* SEARCHBARRESPONSIVE */
+    header .rowtwo .searchBarResponsive{
+        display: inline-block;
+        position: relative;
+        margin-top: 15px;
+        width: 100%;
+    }
+    header .rowtwo .searchBarResponsive input {
+        padding: 15px;
+        border-radius: 20px;
+        width: 100%;
+        outline: none;
+        color: #000;
+        border: none;
+        background-color: #e3e4e5;
+    }
+    header .rowtwo .searchBarResponsive input:hover {
+        border: 1px solid #000;
+    }
+    header .rowtwo .searchBarResponsive input:focus {
+        border: 1px solid #000;
+    }
+    header .rowtwo .searchBarResponsive input::placeholder {
+        color: #000;
+    }
+    header .rowtwo .searchBarResponsive button {
+        padding: 15px 30px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #1498d5;
+        color: #fff;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+    header .rowtwo .searchBarResponsive button:hover {
+        background-color: #000;
+    }
+    /* Rowthree */
+    header .rowthree {
+        display: none;
+    }
+    /* RESPONSIVE MENU */
+    header .responsiveMenu {
+    display: none;
+    }
+    /* SECTION  ONE*/
+    .sectionOne .text {
+        display: none;
+    }
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionOne .textResponsive {
+        display: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 250px;
+        background-color: #e3e4e5;
+    }
+    .sectionOne .textResponsive p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .sectionOne .textResponsive h1 {
+        width: fit-content;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 520;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    .sectionOne .textResponsive span {
+        margin-bottom: 20px;
+        width: fit-content;
+        font-size: 20px;
+        display: block;
+    }
+    .sectionOne .textResponsive button {
+        background-color: #1498d5;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 73px;
+        cursor: pointer;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .sectionOne .textResponsive button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .bestSalesOne {
+        height: 500px;
+    }
+    /* SECTION TWO */
+    .sectionTwo {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .sectionTwo .container {
+        width: 100%;
+    }
+    /* SECTION THREE */
+    .sectionThree {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    .sectionThree .container {
+        margin: 0;
+    }
+    .sectionThree .container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .sectionThree .container ul li {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .sectionThree .container ul .margin {
+        margin-bottom: 70px;
+    }
+    .sectionThree .container ul li i {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    /* SECTION FOUR */
+    .sectionFour {
+        margin: 50px 0;
+    }
+    .sectionFour .container ul li .art {
+        height: 47%;
+    }
+    .sectionFour .container ul li .art:hover {
+        transform: none;
+    }
+    /* SECTION FIVE */
+    .sectionFive {
+        margin: 50px 0;
+    }
+    /* SECTION SIX */
+    .sectionSix {
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionSix .containerLeft {
+        height: 500px;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        background-position: right;
+        position: relative;
+    }
+    .sectionSix .containerLeft .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background-color: #ff681f;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    }
+    .sectionSix .containerLeft .circle p {
+        display: initial;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        transform: rotate(20deg); 
+        font-weight: bold;
+    }
+    .sectionSix .containerRight {
+        height: 500px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .sectionSix .containerRight .text {
+        margin-left: 40px;
+    }
+    .sectionSix .containerRight .text .circle {
+        display: none;
+    }
+    .sectionSix .containerRight .text .circle p {
+        display: none;
+    }
+    .sectionSix .containerRight .text h1 {
+        font-size: 40px;
+    }
+    .sectionSix .containerRight .text span {
+        font-size: 110px;
+    }
+    .sectionSix .containerRight .text p {
+        font-size: 25px;
+    }
+    .sectionSix .containerRight .text button {
+        font-size: 18px;
+        padding: 13px 60px;
+    }
+    /* SECTION SEVEN */
+    .sectionSeven {
+        margin: 50px 0;
+    }
+    .sectionSeven .container ul li .art {
+        height: 47%;
+    }
+    .sectionSeven .container ul li .art:hover {
+        transform: none;
+    }
+    /* SECTION EIGHT */
+    .sectionEight {
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionEight .containerRight {
+        height: 500px;
+        width: 100%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        background-position: right;
+    }
+    .sectionEight .containerLeft {
+        height: 500px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .sectionEight .containerLeft .text {
+        margin-left: 40px;
+    }
+    .sectionEight .containerLeft .text p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .sectionEight .containerLeft .text h1 {
+        font-size: 40px;
+    }
+    .sectionEight .containerLeft .text span {
+        font-size: 110px;
+    }
+    .sectionEight .containerLeft .text p {
+        font-size: 25px;
+    }
+    .sectionEight .containerLeft .text button {
+        font-size: 18px;
+        padding: 13px 60px;
+    }
+    .sectionEight .containerLeft .text button:hover {
+        background-color: #ff681f;
+    }
+    /* SECTION NINE */
+    .sectionNine {
+        margin: 50px 0;
+    }
+    /* SECTION TEN */
+    .sectionTen {
+        margin: 50px 0;
+    }
+    .sectionTen .container {
+        width: 80%;
+    }
+    .sectionTen .subcontainer {
+        width: 100%;
+    }
+    .sectionTen .subcontainer .emailBar{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+    .sectionTen .subcontainer .emailBar input {
+        width: 100%;
+    }
+    /* SECTION ELEVEN */
+    .sectionEleven {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionEleven .containerRight {
+        height: 500px;
+        width: 100%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        background-position: right;
+    }
+    .sectionEleven .containerLeft {
+        height: 500px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .sectionEleven .containerLeft .text {
+        margin-left: 40px;
+    }
+    .sectionEleven .containerLeft .text p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .sectionEleven .containerLeft .text h1 {
+        font-size: 40px;
+    }
+    .sectionEleven .containerLeft .text span {
+        font-size: 110px;
+    }
+    .sectionEleven .containerLeft .text p {
+        font-size: 25px;
+    }
+    .sectionEleven .containerLeft .text button {
+        font-size: 18px;
+        padding: 13px 60px;
+    }
+    /* SECTION TWELVE */
+    .sectionTwelve {
+        background-color: #fff;
+        padding: 70px 10px;
+    }
+    /* SECTION THIRTEEN */
+    .sectionThirteen .container ul {
+        display: grid;
+        column-gap: 70px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sectionThirteen .container ul li {
+        margin-right: 0px;
+    }
+    .sectionThirteen .container ul .but {
+        margin-bottom: 20px;
+    }
+}
+/* R E S P O N S I V E      C E L L P H O N E*/
+@media screen and (max-width: 640px) {
+    header {
+        overflow-y: scroll;
+    }
+    /* Rowone */
+    header .rowone {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowone .asistenBar {
+        display: none;
+    }
+    /* Rowtwo */
+    header .rowtwo {
+        padding: 15px 15px 15px 15px;
+    }
+    header .rowtwo .container {
+        padding: 0;
+        align-items: center;
+        height: fit-content;
+    }
+    header .rowtwo .container .colleft .logo  {
+        margin-right: 0;
+    }
+    header .rowtwo .container .colleft .searchBar {
+        display: none;
+    }
+    header .rowtwo .container .colleft .logo {
+        width: 150px;
+        height: 100%;
+    }
+    header .rowtwo .container .colright .hideItem {
+        display: none;
+    }
+    header .rowtwo .container .colright .responsiveBar {
+        display: inline;
+        margin-right: 0;
+    }
+    /* SEARCHBARRESPONSIVE */
+    header .rowtwo .searchBarResponsive{
+        display: inline-block;
+        position: relative;
+        margin-top: 15px;
+        width: 100%;
+    }
+    header .rowtwo .searchBarResponsive input {
+        padding: 15px;
+        border-radius: 20px;
+        width: 100%;
+        outline: none;
+        color: #000;
+        border: none;
+        background-color: #e3e4e5;
+    }
+    header .rowtwo .searchBarResponsive input:hover {
+        border: 1px solid #000;
+    }
+    header .rowtwo .searchBarResponsive input::placeholder {
+        color: #000;
+    }
+    header .rowtwo .searchBarResponsive button {
+        padding: 15px 30px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #1498d5;
+        color: #fff;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+    header .rowtwo .searchBarResponsive button:hover {
+        background-color: #000;
+    }
+    /* Rowthree */
+    header .rowthree {
+        display: none;
+    }
+    /* RESPONSIVE MENU */
+    header .responsiveMenu {
+        display: none;
+    }
+    /* SECTION  ONE*/
+    .sectionOne .text {
+        display: none;
+    }
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionOne .textResponsive {
+        display: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 222px;
+        background-color: #e3e4e5;
+    }
+    .sectionOne .textResponsive p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: rgb(188, 8, 8);
+        width: fit-content;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .sectionOne .textResponsive h1 {
+        width: fit-content;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 520;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    .sectionOne .textResponsive span {
+        margin-bottom: 20px;
+        width: fit-content;
+        font-size: 20px;
+        display: block;
+    }
+    .sectionOne .textResponsive button {
+        background-color: #1498d5;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 20px;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+    .sectionOne .textResponsive button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .bestSalesOne {
+        height: 300px;
+    }
+        /* SECTION TWO */
+    .sectionTwo {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .sectionTwo .container {
+        border: 5px solid rgb(1, 1, 180);
+        width: 100%;
+        height: 400px;
+    }
+    .sectionTwo .text h1 {
+        font-size: 35px;
+    }
+    /* SECTION THREE */
+    .sectionThree {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionThree .container {
+        margin: 0;
+        
+    }
+    .sectionThree .container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .sectionThree .container ul li {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+    }
+    .sectionThree .container ul .margin {
+        margin-bottom: 70px;
+    }
+    .sectionThree .container ul li i {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    /* SECTION FOUR */
+    .sectionFour {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionFour .heading {
+        margin: 70px 0;
+    }
+    .sectionFour .container {
+        height: 100%;
+    }
+    .sectionFour .container ul {
+        flex-direction: column;
+        margin: 0 5%;
+        width: 100%;
+    }
+    .sectionFour .container ul li {
+        height: 450px;
+        margin-bottom: 20px;
+    }
+    .sectionFour .container ul li:last-child {
+        margin-bottom: 0;
+    }
+    .sectionFour .container ul li .art {
+        height: 78%;
+    }
+    .sectionFour .container ul li .off .offer {
+        font-size: 18px;
+    }
+    .sectionFour .container ul li .price {
+        font-size: 25px;
+    }
+    .sectionFour .container ul li .oldPrice {
+        font-size: 20px;
+    }
+    /* SECTION FIVE */
+    .sectionFive {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionFive .heading {
+        margin: 70px;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .sectionFive .subcontainer .img {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+    }
+    /* SECTION SIX */
+    .sectionSix {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionSix .containerLeft {
+        height: 300px;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        background-position: right;
+        position: relative;
+    }
+    .sectionSix .containerLeft .circle {
+        display: initial;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #ff681f;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+    }
+    .sectionSix .containerLeft .circle p {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        transform: rotate(20deg); 
+        font-weight: bold;
+    }
+    .sectionSix .containerRight {
+        width: 100%;
+        height: 350px;
+        justify-content: flex-start;
+    }
+    .sectionSix .containerRight .text {
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+    .sectionSix .containerRight .text .circle {
+        display: none;
+    }
+    .sectionSix .containerRight .text .circle p {
+        display: none;
+    }
+    .sectionSix .containerRight .text h1 {
+        font-size: 25px;
+    }
+    .sectionSix .containerRight .text span {
+        font-size: 60px;
+    }
+    .sectionSix .containerRight .text p {
+        font-size: 15px;
+    }
+    .sectionSix .containerRight .text button {
+        margin-top: 20px;
+        padding: 13px 45px;
+    }
+    /* SECTION SEVEN */
+    .sectionSeven {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionSeven .heading {
+        margin: 70px 0;
+    }
+    .sectionSeven .container {
+        height: 100%;
+    }
+    .sectionSeven .container ul {
+        flex-direction: column;
+        margin: 0 5%;
+        width: 100%;
+    }
+    .sectionSeven .container ul li {
+        height: 450px;
+        margin-bottom: 20px;
+    }
+    .sectionSeven .container ul li:last-child {
+        margin-bottom: 0;
+    }
+    .sectionSeven .container ul li .art {
+        height: 78%;
+    }
+    .sectionSeven .container ul li .off .offer {
+        font-size: 18px;
+    }
+    .sectionSeven .container ul li .price {
+        font-size: 25px;
+    }
+    .sectionSeven .container ul li .oldPrice {
+        font-size: 20px;
+    }
+    /* SECTION EIGHT */
+    .sectionEight {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionEight .containerRight {
+        height: 300px;
+        width: 100%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        background-position: center;
+    }
+    .sectionEight .containerLeft {
+        width: 100%;
+        height: 350px;
+        justify-content: flex-start;
+    }
+    .sectionEight .containerLeft .text {
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+    .sectionEight .containerLeft .text p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    .sectionEight .containerLeft .text h1 {
+        font-size: 25px;
+    }
+    .sectionEight .containerLeft .text span {
+        font-size: 60px;
+    }
+    .sectionEight .containerLeft .text p {
+        font-size: 15px;
+    }
+    .sectionEight .containerLeft .text button {
+        margin-top: 20px;
+        padding: 13px 45px;
+    }
+    /* SECTION NINE */
+    .sectionNine {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionNine .container ul li {
+        height: 200px;
+        width: 300px;
+    }
+    /* SECTION TEN */
+    .sectionTen {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sectionTen .container>p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .sectionTen .subcontainer p {
+        text-align: center;
+        margin-left: 0;
+    }
+    .sectionTen .subcontainer .emailBar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sectionTen .subcontainer .emailBar input {
+        border: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .sectionTen .subcontainer .emailBar button {
+        border: none;
+        padding: 15px 0px;
+        width: 100%;
+        position: initial;
+    }
+    /* SECTION ELEVEN */
+    .sectionEleven {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionEleven .containerRight {
+        height: 300px;
+        width: 100%;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        background-position: center;
+    }
+    .sectionEleven .containerLeft {
+        width: 100%;
+        height: 300px;
+        justify-content: flex-start;
+    }
+    .sectionEleven .containerLeft .text {
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+    .sectionEleven .containerLeft .text p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    .sectionEleven .containerLeft .text h1 {
+        font-size: 25px;
+    }
+    .sectionEleven .containerLeft .text span {
+        font-size: 60px;
+    }
+    .sectionEleven .containerLeft .text p {
+        font-size: 15px;
+    }
+    .sectionEleven .containerLeft .text button {
+        margin-top: 20px;
+        padding: 13px 45px;
+    }
+    /* SECTION TWELVE */
+    .sectionTwelve {
+        background-color: #fff;
+        padding: 70px 0px;
+        padding-bottom: 10px;
+    }
+    .sectionTwelve .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTwelve .container .sub {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    /* SECTION THIRTEEN */
+    .sectionThirteen {
+        background-color: #fff;
+        padding: 70px 7%;
+        padding-top: 0;
+    }
+    .sectionThirteen .container ul {
+        column-gap: 20px;
+    }
+    .sectionThirteen .container p {
+        text-align: center;
+    }
+}
+/* GALAXY FOLD */
+@media screen and (max-width: 340px) {
+    /* SECTION EIGHT */
+    .sectionEight .containerLeft {
+        height: 400px;
+    }
+    /* SECTION NINE */
+    .sectionNine .container ul li {
+        height: 140px;
+        width: 240px;
+    }
+    /* SECTION THIRTEEN */
+    .sectionThirteen .container ul {
+        column-gap: 10px;
+    }
+    .sectionThirteen .container p {
+        text-align: center;
+    }
+    .sectionThirteen .container ul li {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+
