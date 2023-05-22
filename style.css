@@ -2073,4 +2073,45 @@ header .responsiveMenu .secondPart .container ul li a {
     }
 }
 
+@media screen and (max-height: 650px) {
+    .bestSalesOne .text p:first-child {
+        color: #fff;
+        font-size: 20px;
+        background-color: #ff681f;
+        width: fit-content;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .bestSalesOne .text h1 {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    .bestSalesOne .text span {
+        margin-bottom: 20px;
+        width: fit-content;
+        font-size: 20px;
+        display: block;
+    }
+    .bestSalesOne .text button {
+        background-color: #1498d5;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 73px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s;
+    }
+    .bestSalesOne .text button:hover {
+        background-color: #ff681f;
+    }
+    .bestSalesOne .text button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
 
